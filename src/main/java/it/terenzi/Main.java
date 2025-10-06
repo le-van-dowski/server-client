@@ -23,6 +23,6 @@ public class Main {
         str =in.readLine();
         str = str.toUpperCase();
         out.println(str);
-       }while(str.equals("EXIT"));
+       }while(!str.equals("EXIT"));
     }
 }
