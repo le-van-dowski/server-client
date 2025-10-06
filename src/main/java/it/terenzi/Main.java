@@ -18,8 +18,11 @@ public class Main {
         PrintWriter out =new PrintWriter(mySocket.getOutputStream(), true);
 
         out.println("welcome | v1.0.0");
-        String str =in.readLine();
+        String str ="";
+       do{
+        str =in.readLine();
         str = str.toUpperCase();
         out.println(str);
+       }while(str.equals("EXIT"));
     }
 }
